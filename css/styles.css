@@ -1,0 +1,129 @@
+body {
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+	font-size: 1.125rem;
+}
+
+/*--------------
+	Typography
+----------------*/
+h1 {
+	font-family: 'Lora', serif;
+	font-size: 1.8rem;
+	font-weight: 400;
+	color: #143774;
+}
+
+.subtitle {
+	font-weight: 700;
+	font-size: 0.75rem;
+	color: #1792D2;
+	letter-spacing: 1px;
+}
+
+nav a {
+	font-weight: 700;
+	font-size: 1rem;
+	text-decoration: none;
+	color: #717171;
+	letter-spacing: 2px;
+}
+
+nav a:hover,
+nav a:focus {
+	color: #1792D2;
+}
+
+.current-page:hover,
+.current-page:focus {
+	color: #717171;
+}
+
+
+/*--------------
+	Layout
+----------------*/
+.container {
+	padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+	.container {
+		padding: 0;
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+.container-nav {
+	display: flex;
+	flex-direction: column;
+}
+
+@media (min-width: 768px) {
+	.container-nav {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.site-title {
+	text-align: center;
+	margin-bottom: 1.8em;
+}
+
+h1 {
+	margin: 0;
+}
+
+.subtitle {
+	margin: 0;
+}
+
+@media (min-width: 768px) {
+	.site-title {
+		margin: 0;
+	}
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+nav li {
+	margin-bottom: 1.5em
+}
+
+nav a {
+	padding-bottom: 4px;
+}
+
+nav .current-page {
+  border-bottom: 2px solid
+}
+
+@media (min-width: 768px) {
+	nav ul {
+		flex-direction: row;
+	}
+
+	nav li {
+		margin-left: 1.5em;
+		margin-bottom: 0;
+	}
+}
+
+
+/*--------------
+	Transitions
+----------------*/
+a {
+	transition: all .5s ease-in-out;
+}
